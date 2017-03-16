@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jonathans Online Store</title>
+  <title>My Online Store</title>
   <%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => 'reload' %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => 'reload' %>
@@ -15,6 +15,12 @@
   </div>
   <div id="columns">
     <div id="side">
+      <div id="cart">
+        <% if @cart %>
+          <%= render @cart %>
+        <% end %>
+      </div>
+
       <ul>
         <li><a href="http://www....">Home</a></li>
         <li><a href="http://www..../faq">Questions</a></li>
