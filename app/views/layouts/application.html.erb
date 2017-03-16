@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Online Store</title>
+  <title>Pragprog Books Online Store</title>
   <%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => 'reload' %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => 'reload' %>
@@ -20,20 +20,6 @@
           <%= render @cart %>
         <% end %>
       <% end %>
-
-      <ul>
-        <li><a href="http://www....">Home</a></li>
-        <li><a href="http://www..../faq">Questions</a></li>
-        <li><a href="http://www..../news">News</a></li>
-        <li><a href="http://www..../contact">Contact</a></li>
-      </ul>
-    </div>
-    <div id="main">
-      <%= yield %>
-    </div>
-  </div>
-</body>
-</html>
 
       <ul>
         <li><a href="http://www....">Home</a></li>
